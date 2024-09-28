@@ -7,6 +7,8 @@ import Profile from "@/views/Profile.vue";
 import Rtl from "@/views/Rtl.vue";
 import SignIn from "@/views/SignIn.vue";
 import SignUp from "@/views/SignUp.vue";
+import Scheduler from "../views/Scheduler.vue";
+import Joe from "../views/Joe.vue";
 
 const routes = [
   {
@@ -18,6 +20,16 @@ const routes = [
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
+  },
+  {
+    path: "/joe",
+    name: "Joe",
+    component: Joe,
+  },
+  {
+    path: "/scheduler",
+    name: "Scheduler",
+    component: Scheduler,
   },
   {
     path: "/tables",

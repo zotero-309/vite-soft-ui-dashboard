@@ -19,8 +19,13 @@ import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
 import SoftUIDashboard from "./soft-ui-dashboard";
 
+
 createApp(App)
     .use(store)
     .use(router)
     .use(SoftUIDashboard)
     .mount('#app')
+
+
+
+app.config.isCustomElement = tag => tag.startsWith('smart-');

@@ -5,12 +5,29 @@
   >
     <ul class="navbar-nav">
       <li class="nav-item">
+        <sidenav-collapse nav-text="Scheduler" :to="{ name: 'Scheduler' }">
+          <template #icon>
+            <icon name="calendar" />
+          </template>
+        </sidenav-collapse>
+      </li>
+
+      <li class="nav-item">
+        <sidenav-collapse nav-text="Joe" :to="{ name: 'Joe' }">
+          <template #icon>
+            <icon name="calendar" />
+          </template>
+        </sidenav-collapse>
+      </li>
+
+      <li class="nav-item">
         <sidenav-collapse nav-text="Dashboard" :to="{ name: 'Dashboard' }">
           <template #icon>
             <icon name="dashboard" />
           </template>
         </sidenav-collapse>
       </li>
+
       <li class="nav-item">
         <sidenav-collapse nav-text="Tables" :to="{ name: 'Tables' }">
           <template #icon>
